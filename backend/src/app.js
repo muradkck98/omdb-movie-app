@@ -1,7 +1,7 @@
 const express = require('express');
 const dotenv = require('dotenv');
 const searchRoutes = require('./routes/searchRoutes');
-const cors = require('cors'); // CORS paketini içe aktarın
+const cors = require('cors');
 
 dotenv.config();
 const app = express();

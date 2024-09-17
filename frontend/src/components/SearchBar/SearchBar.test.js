@@ -4,7 +4,6 @@ import { useDispatch } from 'react-redux';
 import SearchBar from './index';
 import { fetchMoviesRequest } from '../../redux/actions';
 
-// Mock useDispatch and fetchMoviesRequest
 jest.mock('react-redux', () => ({
   useDispatch: jest.fn(),
 }));

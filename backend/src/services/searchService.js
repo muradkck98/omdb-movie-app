@@ -17,7 +17,7 @@ const searchMovies = async (keyword) => {
     
     const request1 = axios.get(API_URL, { params: { s: keyword, page: 1, apikey: API_KEY } });
     const request2 = axios.get(API_URL, { params: { s: keyword, page: 2, apikey: API_KEY } });
-    console.log('api-key', keyword)
+    console.log('keyword', keyword)
     const [response1, response2] = await axios.all([request1, request2]);
 
     // Combine results
